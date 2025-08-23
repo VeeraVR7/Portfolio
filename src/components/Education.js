@@ -6,7 +6,7 @@ export default function Education() {
       role:"B.E Mechanical Engineering",
       period:"2017 - 2021",
       desc: "Pursued B.E. Mechanical Engineering at KLN College of Engineering and graduated with 8.04 CGPA.",
-      img: "/images/college.jpeg",
+      img: process.env.PUBLIC_URL +"/images/college.jpeg",
       side: "right",
     },
     {
@@ -15,7 +15,7 @@ export default function Education() {
       role: "Service Advisor",
       period:"2021-2025",
       desc: "Started my career as a Service Advisor at TVS, where I learned customer handling, service operations, and problem-solving skills.",
-      img: "/images/tvs.jpeg",
+      img: process.env.PUBLIC_URL +"/images/tvs.jpeg",
       side: "left",
     },
     {
@@ -24,7 +24,7 @@ export default function Education() {
       role:"Full-Stack web development using python",
       period:"Feb2025- June2025 ",
       desc: "Successfully completed Python Full Stack Development course, building real-time projects.",
-      img: "/images/innoval.jpeg",
+      img: process.env.PUBLIC_URL +"/images/innoval.jpeg",
       side: "right",
     },{
       id: 4,
@@ -32,7 +32,7 @@ export default function Education() {
       role:"React",
       period:"July2025-Ongoing ",
       desc: "Currently learning React on Udemy, focusing on building interactive user interfaces, reusable components, and modern front-end practices.",
-      img: "/images/udemy.jpg",
+      img: process.env.PUBLIC_URL +"/images/udemy.jpg",
       side: "left",
     },
   ];
@@ -41,10 +41,7 @@ export default function Education() {
     <div className="bg-primary text-white py-12" id="journey">
       <h2 className="text-4xl font-bold text-center text-indigo-400 mb-12">My Journey</h2>
       <div className="relative max-w-5xl mx-auto">
-        {/* Vertical Timeline Line */}
         <div className="absolute left-1/2 top-0 w-1 bg-blue-400 h-full transform -translate-x-1/2"></div>
-
-        {/* Timeline Items */}
         {timeline.map((step) => (
           <div
             key={step.id}
@@ -52,12 +49,11 @@ export default function Education() {
               step.side === "left" ? "flex-row-reverse" : ""
             } relative`}
           >
-            {/* Connector Dot */}
+            
             <div className=" absolute left-1/2 transform -translate-x-1/2 hidden md:block">
               <div className="w-6 h-6 bg-blue-500 rounded-full z-10"></div>
             </div>
 
-            {/* Content Box */}
             <div className={`w-auto flex justify-${step.side === "left" ? "end" : "start"}`}>
               <div className="bg-gray-800 rounded-2xl p-6 shadow-lg max-w-sm transition-transform hover:scale-105 flex flex-col gap-4">
                 <div>

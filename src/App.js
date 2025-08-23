@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header/>
       <div className="min-h-screen bg-no-repeat bg-center bg-cover " 
-                 style={{ backgroundImage: "url('/images/bgportfolio.jpg')" }}>
+                 style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/bgportfolio.jpg)`}}>
       <Hero/>
       </div>
       <About/>

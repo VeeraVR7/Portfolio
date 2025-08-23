@@ -10,7 +10,7 @@ export default function Hero() {
     }
     return<section className='flex flex-col md:flex-row px-5 py-32  justify-center'>
         <div className='md:w-1/2'>
-        <h1 className=' text-gray-200 text-6xl font-mon-font'>Hi,<br/>Im <span className='text-sky-400'>Veeramuthvel</span>
+        <h1 className=' text-gray-200 text-4xl md:text-6xl font-mon-font'>Hi,<br/>Im <span className='text-sky-400'>Veeramuthvel</span>
         <p className='text-2xl text-gray-400'>{config.subtitle}</p>
         </h1>
         <div className='flex py-10'>

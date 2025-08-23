@@ -5,26 +5,26 @@ export default function Skills() {
 
   const skills = {
     Frontend: [
-      { name: "HTML", image: "/images/html.png" },
-      { name: "CSS", image: "/images/css.png" },
-      { name: "JavaScript", image: "/images/js.png" },
-      { name: "Bootstrap", image: "/images/bootstrap.png" },
-      { name: "jQuery", image: "/images/jquery.png" },
-      { name: "Tailwind CSS", image: "/images/tailwind.png" },
-      { name: "React", image: "/images/react.png" },
+      { name: "HTML", image:process.env.PUBLIC_URL + "/images/html.png" },
+      { name: "CSS", image: process.env.PUBLIC_URL +"/images/css.png" },
+      { name: "JavaScript", image: process.env.PUBLIC_URL +"/images/js.png" },
+      { name: "Bootstrap", image: process.env.PUBLIC_URL +"/images/bootstrap.png" },
+      { name: "jQuery", image:process.env.PUBLIC_URL +"/images/jquery.png" },
+      { name: "Tailwind CSS", image: process.env.PUBLIC_URL +"/images/tailwind.png" },
+      { name: "React", image: process.env.PUBLIC_URL +"/images/react.png" },
     ],
     Backend: [
-      { name: "Python", image: "/images/python.png" },
-      { name: "Django", image: "/images/django.png" },
-      { name: "REST API", image: "/images/api.png" },
+      { name: "Python", image:process.env.PUBLIC_URL + "/images/python.png" },
+      { name: "Django", image: process.env.PUBLIC_URL +"/images/django.png" },
+      { name: "REST API", image: process.env.PUBLIC_URL +"/images/api.png" },
     ],
     Database: [
-      { name: "MySQL", image: "/images/mysql.png" },
-      { name: "PostgreSQL", image: "/images/sql.png" },
+      { name: "MySQL", image: process.env.PUBLIC_URL +"/images/mysql.png" },
+      { name: "PostgreSQL", image: process.env.PUBLIC_URL +"/images/sql.png" },
     ],
     Tools: [
-      { name: "Git / GitHub", image: "/images/git.png" },
-      { name: "VS Code", image: "/images/vscode.png" },
+      { name: "Git / GitHub", image: process.env.PUBLIC_URL +"/images/git.png" },
+      { name: "VS Code", image:process.env.PUBLIC_URL + "/images/vscode.png" },
     ],
   };
 
@@ -39,7 +39,6 @@ export default function Skills() {
         My Skills
       </h2>
 
-      {/* Category Buttons */}
       <div className="flex justify-center gap-4 mb-10 flex-wrap">
         {["All", "Frontend", "Backend", "Database", "Tools"].map((category) => (
           <button
@@ -56,7 +55,6 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Skill Cards */}
       <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
         {displayedSkills.map((skill, index) => (
           <div

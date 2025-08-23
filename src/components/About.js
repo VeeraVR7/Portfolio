@@ -12,7 +12,7 @@ export default function About() {
   return (
     <section className="flex flex-col md:flex-row bg-secondary px-5" id="about">
       <div className="py-5 md:w-1/2 flex justify-center">
-        <img src={aboutimg} className="w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-indigo-500 shadow-lg hover:border-orange-500 transition duration-300 cursor-pointer" alt="About me" />
+        <img src={aboutimg} className="w-40 h-40 md:w-52 md:h-52 mt-20 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-indigo-500 shadow-lg hover:border-orange-500 transition duration-300 cursor-pointer" alt="About me" />
       </div>
       <div className="md:w-1/2 flex justify-center">
         <div className="flex flex-col justify-center">
