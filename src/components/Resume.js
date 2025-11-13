@@ -1,7 +1,7 @@
 import resumeimg from '../assets/resumeimg.png';
 export default function Resume(){
     const config={
-        link:"https://drive.google.com/file/d/1XyUWZP_aeN6t3XmwbtzV1XNndasOxXLr/view?usp=drivesdk"
+        link:"https://drive.google.com/file/d/1dIUMTptktbuCVB7cqpVjTHnjpSCec0x_/view?usp=drivesdk"
     }
     return<section className='flex flex-col md:flex-row bg-secondary px-5' id='resume'>
         <div className='py-5  md:w-1/2 flex justify-center md:justify-end'> 

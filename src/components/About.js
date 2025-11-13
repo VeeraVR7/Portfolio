@@ -2,10 +2,11 @@ import aboutimg from '../assets/me.png';
 
 export default function About() {
   const config = {
-    intro: "Hi, I’m Veeramuthuvel. I hold a degree in Mechanical Engineering, but my passion for technology inspired me to transition into software development. To build a strong foundation, I completed a Python Full Stack Development and React course, where I gained expertise in:",
+    intro: "Passionate and highly proficient Full Stack Developer specializing in React.js and Python/Django, with hands-on training in RESTful API development and data analysis using SQL/NoSQL databases. Proven ability in responsive web design, debugging, and problem-solving. Seeking an Entry-Level Software Developer role to leverage technical training and contribute to dynamic, scalable applications. ",
     frontend: "Front-end: HTML, CSS, JavaScript, Bootstrap, jQuery, Tailwind CSS, React",
-    backend: "Back-end: Python, Django, MySQL, REST API, PostgreSQL ",
-    tools: "Tools & Practices: Git, Responsive Web Design",
+    backend: "Back-end: Python, Django, MySQL, REST API, PostgreSQL,MongoDB ",
+    tools: "Tools & Practices: Git, Responsive Web Design,vscode,JuipterNotebook",
+    DataScience_Analytics:"Data Science&Analytics:NumPy, Pandas, Matplotlib, Machine Learning (ML), Data Analysis, Excel, Power BI, Tableau", 
     projects: "As part of my training, I developed practical projects such as a Library Management System and an E-commerce Website, which gave me hands-on experience with the end-to-end development process—from designing user-friendly interfaces to managing databases. I’m now excited to begin my career in the IT industry, where I can apply my skills, continuously learn, and contribute to impactful projects."
   };
 
@@ -22,6 +23,7 @@ export default function About() {
           <ul className="list-disc list-inside text-white mb-4">
             <li>{config.frontend}</li>
             <li>{config.backend}</li>
+            <li>{config.DataScience_Analytics}</li>
             <li>{config.tools}</li>
           </ul>
 

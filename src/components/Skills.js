@@ -21,10 +21,23 @@ export default function Skills() {
     Database: [
       { name: "MySQL", image: process.env.PUBLIC_URL +"/images/mysql.png" },
       { name: "PostgreSQL", image: process.env.PUBLIC_URL +"/images/sql.png" },
+      { name: "MongoDB", image: process.env.PUBLIC_URL +"/images/Mongo.png" },
+
     ],
+    DataScience: [
+      { name: "Numpy", image: process.env.PUBLIC_URL +"/images/num.png" },
+      { name: "Pandas", image:process.env.PUBLIC_URL + "/images/Pandas.png" },
+      { name: "matplotlib", image:process.env.PUBLIC_URL + "/images/mat.png" },
+      { name: "ML", image:process.env.PUBLIC_URL + "/images/ml.png" },
+      { name: "Excel", image:process.env.PUBLIC_URL + "/images/el.png" },
+      { name: "PowerBI", image:process.env.PUBLIC_URL + "/images/pb.png" },
+      { name: "Tableau", image:process.env.PUBLIC_URL + "/images/table.png" },
+    ],
+
     Tools: [
       { name: "Git / GitHub", image: process.env.PUBLIC_URL +"/images/git.png" },
       { name: "VS Code", image:process.env.PUBLIC_URL + "/images/vscode.png" },
+      { name: "Jupyter notebook", image:process.env.PUBLIC_URL + "/images/jup.png" },
     ],
   };
 
@@ -40,7 +53,7 @@ export default function Skills() {
       </h2>
 
       <div className="flex justify-center gap-4 mb-10 flex-wrap">
-        {["All", "Frontend", "Backend", "Database", "Tools"].map((category) => (
+        {["All", "Frontend", "Backend", "Database","DataScience", "Tools"].map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}

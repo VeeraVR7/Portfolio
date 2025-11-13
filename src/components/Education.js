@@ -29,9 +29,9 @@ export default function Education() {
     },{
       id: 4,
       title: "Udamey",
-      role:"React",
-      period:"July2025-Ongoing ",
-      desc: "Currently learning React on Udemy, focusing on building interactive user interfaces, reusable components, and modern front-end practices.",
+      role:"Advance Python | Python for Data Science",
+      period:"July2025-Nov2025 ",
+      desc: "Successfully completed Python for Data Science course.",
       img: process.env.PUBLIC_URL +"/images/udemy.jpg",
       side: "left",
     },
